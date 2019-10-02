@@ -6,6 +6,9 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
+// Builds the ArrayList for the Miwok colors
+// and passes to the adapter
+
 public class ColorsActivity extends AppCompatActivity {
 
     @Override

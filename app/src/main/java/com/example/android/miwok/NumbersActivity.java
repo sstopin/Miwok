@@ -6,6 +6,9 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
+// Builds the ArrayList for the Miwok numbers
+// and passes to the adapter
+
 public class NumbersActivity extends AppCompatActivity {
 
     @Override

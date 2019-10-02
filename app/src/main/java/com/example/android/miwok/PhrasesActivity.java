@@ -6,6 +6,9 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
+// Builds the ArrayList for the Miwok phrases
+// and passes to the adapter
+
 public class PhrasesActivity extends AppCompatActivity {
 
     @Override
