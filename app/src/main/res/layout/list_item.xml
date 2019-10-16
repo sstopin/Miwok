@@ -2,22 +2,23 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="horizontal" android:layout_width="match_parent"
-    android:layout_height="@dimen/list_item_height"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/list_item_height"
     android:layout_marginBottom="1dp"
-    android:background="@color/category_family"
+    android:background="@color/tan_background"
     android:id="@+id/listItemLinearLayout">
 
         <ImageView
             android:id="@+id/miwokImage"
             android:layout_width="@dimen/icon_height_width"
             android:layout_height="@dimen/icon_height_width"
-            android:src="@mipmap/ic_launcher"
             android:background="@color/tan_background"/>
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:paddingLeft="@dimen/standardPadding"
             android:paddingTop="@dimen/standardPadding"
+            android:id="@+id/text_container"
             android:orientation="vertical">
             <TextView
                 android:id="@+id/miwokWord"
