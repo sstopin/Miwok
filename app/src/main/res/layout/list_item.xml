@@ -5,19 +5,15 @@
     android:layout_height="wrap_content"
     android:minHeight="@dimen/list_item_height"
     android:layout_marginBottom="1dp"
-    android:background="@color/tan_background"
+    android:background="@color/primary_color"
     android:id="@+id/listItemLinearLayout">
 
-        <ImageView
-            android:id="@+id/miwokImage"
-            android:layout_width="@dimen/icon_height_width"
-            android:layout_height="@dimen/icon_height_width"
-            android:background="@color/tan_background"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/text_container"
             android:orientation="horizontal">
+
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_weight="1"
@@ -26,28 +22,47 @@
                 android:paddingTop="@dimen/standardPadding"
                 android:orientation="vertical">
                 <TextView
-                    android:id="@+id/miwokWord"
+                    android:id="@+id/eventName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="@dimen/listTextSize"
                     android:textStyle="bold"
                     android:textColor="@color/text_color"
-                    tools:text="lutti"/>
+                    tools:text="event Name"/>
 
                 <TextView
-                    android:id="@+id/defaultWord"
+                    android:id="@+id/eventAddress"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="@color/text_color"
+                    android:paddingLeft="@dimen/smallPadding"
                     android:textSize="@dimen/listTextSize"
-                    tools:text="one"/>
+                    tools:text="Address"/>
+
+                <TextView
+                    android:id="@+id/eventCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color"
+                    android:paddingLeft="@dimen/smallPadding"
+                    android:textSize="@dimen/listTextSize"
+                    tools:text="City"/>
+
+                <TextView
+                    android:id="@+id/eventHours"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/smallPadding"
+                    android:paddingBottom="@dimen/smallPadding"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/listTextSize"
+                    tools:text="Hours"/>
             </LinearLayout>
             <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_marginRight="16dp"
-                android:layout_gravity="center_vertical"
-                android:src="@drawable/ic_play_arrow_white_24dp"/>
+                android:id="@+id/listImage"
+                android:layout_width="@dimen/picWidth"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
         </LinearLayout>
 
 </LinearLayout>

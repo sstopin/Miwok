@@ -5,7 +5,7 @@ android {
     buildToolsVersion '28.0.3'
 
     defaultConfig {
-        applicationId "com.example.android.miwok"
+        applicationId "com.example.android.tourguideapp"
         minSdkVersion 15
         targetSdkVersion 26
         versionCode 1
